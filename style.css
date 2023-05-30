@@ -1,0 +1,215 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+body{
+    /* height: 100vh; */
+    /* min-width: 10rem; */
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    border: 1px solid black;
+    height: 4rem;
+    width: 100%;
+    background-image: linear-gradient( 86.3deg,  rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6% );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    z-index: 99;
+}
+
+.websites{
+    
+    height: 3rem;
+    width: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+ion-icon{
+    font-size: 2rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+ion-icon:hover{
+    /* transform: scale(1.2); */
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.site-nav{
+    
+    height: 3rem;
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+.nav-button{
+    font-size: 1.5rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-color: orange;
+    background-image: url(bg1.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( 86.3deg,  rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6% );
+}
+.about-grid{
+    /* background-color: skyblue; */
+    color: white;
+    height: 80%;
+    width: 65%;
+    min-width: 20rem;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 7rem);
+    grid-template-rows: 25rem 15rem;
+}
+.about-img img{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+}
+.about-img{
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-name{
+    grid-column: 4 / 5;
+    /* background-color: blue; */
+    font-size: 3.5rem;
+    display: flex;
+    align-items:end;
+}
+
+.about-info{
+    grid-column: 4/5;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: start;
+}
+
+.project{   
+    width: 100%;
+    min-height: calc(100vh - 4rem);
+    /* background-color: blue; */
+    background-image: url(bg3.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+.projects-heading{
+    /* background-color: brown; */
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.projects-showcase{
+    /* background-color: yellow; */
+    height: 80%;
+    min-width: calc(16 * 15px);
+    width: 80%;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.project-item{
+    /* background-color: blueviolet; */
+    display: flex;
+    height: calc(9 * 15px);
+    width: calc(16 * 15px);
+    border: 2px solid white;
+    flex-shrink: 0;
+    border-radius: 2rem;
+}
+.project-item img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0.5px;
+}
+.project-item:hover{
+    cursor: pointer;
+
+}
+
+.connect{
+    height: 15rem;
+    width: 100%;
+    /* background-color: rgba(12, 75, 75, 0.685); */
+    background-image: linear-gradient( 86.3deg,  rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    font-size: 4rem;
+    gap: 2rem;
+}
+.socials a ion-icon{
+    font-size: 5rem;
+    color: black;
+    border: 0rem;
+
+}
+.socials{
+    /* background-color: rgb(255, 72, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.clickable:hover{
+    transform:scale(1.1) ;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    color: rgb(1, 1, 22);
+}
+.clickable:active{
+    transform: scale(0.8);
+}
+
+.card{
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.grow:hover{
+    -webkit-transition:0.3s ease-in-out;
+    transform: scale(1.1);
+}
