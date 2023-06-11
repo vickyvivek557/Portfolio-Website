@@ -50,6 +50,10 @@ ion-icon:hover{
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+
+ion-icon:active{
+    transform: scale(0.9);
+}
 .site-nav{
     
     height: 3rem;

@@ -32,3 +32,6 @@ projectsBtn.onclick = goToProjects;
 
 let connectBtn = document.querySelector(".connect-nav");
 connectBtn.onclick = goToConnect;
+
+let linkedinBtn = document.querySelector("#linkedin");
+linkedinBtn.setAttribute("href", "https://www.linkedin.com/in/vickyvivek557/");
