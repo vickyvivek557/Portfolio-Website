@@ -103,7 +103,7 @@ ion-icon:active{
     grid-column: 1 / 4;
     grid-row: 1 / 3;
     /* background-color: yellow; */
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
 }
@@ -144,7 +144,7 @@ ion-icon:active{
     height: 80%;
     min-width: calc(16 * 15px);
     width: 80%;
-    gap: 1rem;
+    gap: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,11 +168,22 @@ ion-icon:active{
     width: 100%;
     padding: 0.5px;
 }
+
 .project-item:hover{
     cursor: pointer;
 
 }
-
+.project-item-text{
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    text-align: center;
+}
+.project-item:hover .project-item-text{
+    visibility: visible;
+}
 .connect{
     height: 15rem;
     width: 100%;
@@ -214,6 +225,6 @@ ion-icon:active{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .grow:hover{
-    -webkit-transition:0.3s ease-in-out;
+    transition:0.3s ease-in-out;
     transform: scale(1.1);
 }
