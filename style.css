@@ -86,7 +86,7 @@ ion-icon:active{
 .about-grid{
     /* background-color: skyblue; */
     color: white;
-    height: 80%;
+    height: 100%;
     width: 65%;
     min-width: 20rem;
     margin: 2rem;
@@ -95,8 +95,8 @@ ion-icon:active{
     grid-template-rows: 25rem 15rem;
 }
 .about-img img{
-    height: 95%;
-    width: 95%;
+    height: 60%;
+    width: 70%;
     object-fit: cover;
 }
 .about-img{
@@ -144,7 +144,7 @@ ion-icon:active{
     height: 80%;
     min-width: calc(16 * 15px);
     width: 80%;
-    gap: 2rem;
+    gap: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +164,7 @@ ion-icon:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 80%;
     width: 100%;
     padding: 0.5px;
 }
@@ -174,7 +174,10 @@ ion-icon:active{
 
 }
 .project-item-text{
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
     border-radius: 1rem;
